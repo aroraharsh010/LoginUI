@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "526091571180",
+    "firebase_url": "https://testlogin-21c12.firebaseio.com",
+    "project_id": "testlogin-21c12",
+    "storage_bucket": "testlogin-21c12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526091571180:android:791fef58acec48ed",
+        "android_client_info": {
+          "package_name": "com.example.harsh.loginactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526091571180-o6moks99n960j970s665jt0bmbgac34j.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "526091571180-o6moks99n960j970s665jt0bmbgac34j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOJdmNMvQixQgLXdwXWQMR-oUuVxXBvTw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

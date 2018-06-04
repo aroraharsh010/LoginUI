@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bck"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:animateLayoutChanges="true">
+
+        <ImageView
+            android:id="@+id/imgV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            />
+        <RelativeLayout
+            android:id="@+id/relLayout1"
+            android:layout_below="@+id/imgV"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+
+                android:id="@+id/textView"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/textView"
+                android:orientation="vertical"
+                android:id="@+id/linlay1"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/userTv"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textAllCaps="true"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/userEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_bk"
+                         android:layout_marginTop="5dp"
+                        android:inputType="textEmailAddress"
+                        android:textSize="15sp"
+                        android:textColor="#ffff"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linLay"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/passTv"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textAllCaps="true"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/passEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/edittext_bk"
+                        android:layout_marginTop="5dp"
+                        android:inputType="textPassword"
+                        android:textSize="15sp"
+                        android:textColor="#ffff"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkbox"
+                android:layout_below="@+id/linlay1"
+                android:layout_marginTop="10dp"
+                android:text="Show Password"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/checkbox"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="sign up"
+                android:onClick="register"
+                android:textAllCaps="true"
+                android:background="@drawable/edittext_bk"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ffff"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/relLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+       >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:fontFamily="sans-serif"
+            android:text="Existing user? Login here!"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
